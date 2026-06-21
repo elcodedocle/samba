@@ -1,6 +1,8 @@
 services:
   samba:
-    image: dockurr/samba
+    build:
+      context: .
+      dockerfile: Dockerfile
     container_name: samba
     environment:
       NAME: "Data"
